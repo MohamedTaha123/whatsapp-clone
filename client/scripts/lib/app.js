@@ -14,6 +14,7 @@ import {
 
 // Modules
 import ChatsCtrl from '../controllers/chats.controller';
+import ChatCtrl from '../controllers/chat.controller';
 import RoutesConfig from '../routes';
 
 
@@ -22,6 +23,8 @@ const App = 'Whatsapp';
 
 new Loader(App)
   .load(ChatsCtrl)
+  .load(CalendarFilter)
+  .load(ChatCtrl)
   .load(RoutesConfig);
 
 
